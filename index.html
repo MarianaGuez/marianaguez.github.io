@@ -1,0 +1,108 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPage</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            /*base style*/
+
+            body{
+                color: #333;
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                background-image:url(assets/img/tree.jpg);
+                background-repeat: no-repeat;
+                background-position:top;
+                background-size: 100% 110%;
+            }
+            hr{
+                display: none;
+            }
+            /* reusables   */
+            .constrain{
+                align-items: flex-end;
+                padding: 10px 60px;
+                margin: 0;
+            }
+
+            /* header */
+            .header{
+                background-color: #333;
+            }
+            .header .constrain{
+                display: flex;
+                justify-content: space-between;  
+                align-items: center;              
+            }
+            .header h1{
+                margin: 0;
+                padding: 0;
+            }
+            .header a {
+                color: #ccc;
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.3s;
+            }
+            .header a:hover {
+                color: white;
+            }
+            .header nav ul{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+            }
+            .header nav ul a{
+                margin-left: 50px;
+            }
+            .intro-text{
+                font-family: 'Lobster Two', cursive;
+                margin: 85 20;
+                margin-right: 50%;
+                color: rgb(102, 97, 143);
+                font-size: 145%;
+            }            
+            
+            footer {
+                justify-content: flex-end;
+                margin-top: 25%;
+                color: rgb(187, 180, 180);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="constrain">
+                <h1><a href="">Home</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Image Processing</a></li>
+                        <li><a href="">Digital Filters</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </header>
+
+        <hr>
+
+        <section>
+            <div class="intro-text">
+                <h1>"What an amazing are the laws that govern the universe, and how much more our mind that understand them" - Marie Curie</h1>
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <footer class="end-page">
+            Mariana Rodríguez Castañeda &copy; 2021
+        </footer>
+    </body>
+</html>
